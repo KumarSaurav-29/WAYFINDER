@@ -8,8 +8,6 @@ Instead of assuming that one travel option is universally best, WAYFINDER evalua
 
 The system converts user preferences into measurable engineering criteria and uses weighted optimization to rank available alternatives.
 
----
-
 ## Project Overview
 
 Travel planning often requires users to compare multiple factors across different transportation options.
@@ -26,21 +24,19 @@ The final recommendation is therefore based on the user's selected requirements 
 
 ### WAYFINDER Interface
 
-The following screenshots show the main WAYFINDER interface and the overall visual design of the system.
+The main WAYFINDER interface provides a clean starting point for configuring a journey and understanding the decision-making process.
 
 <p align="center">
-  <img src="screenshots/wayfinder-home%201.png" alt="WAYFINDER Home Interface" width="900">
+<img src="./screenshots/wayfinder-home%201.png" alt="WAYFINDER Home Interface 1" width="900">
 </p>
 
-The home interface introduces the travel decision problem and provides a clean starting point for configuring a journey.
+The interface keeps the planning process structured while presenting the core travel decision clearly to the user.
 
 <p align="center">
-  <img src="screenshots/wayfinder-home%202.png" alt="WAYFINDER Home Interface 2" width="900">
+<img src="./screenshots/wayfinder-home%202.png" alt="WAYFINDER Home Interface 2" width="900">
 </p>
 
-The interface is designed around a simple user flow, keeping the travel planning process structured while avoiding unnecessary complexity.
-
----
+The overall visual design focuses on clarity, hierarchy, and a simple user journey from planning to decision-making.
 
 ## Key Features
 
@@ -84,8 +80,6 @@ Example:
 
 The weights are converted into optimization parameters and influence the final ranking.
 
----
-
 ## Trip Planning
 
 The Planner allows users to configure:
@@ -106,21 +100,19 @@ Supported trip types:
 - Round-trip
 - Trip + Stay
 
-The planner is designed to collect the user's requirements before the optimization process begins.
+The priority selection stage allows the user to define what matters most for the journey.
 
 <p align="center">
-  <img src="screenshots/priority-selection%201.png" alt="WAYFINDER Priority Selection" width="900">
+<img src="./screenshots/priority-selection%201.png" alt="WAYFINDER Priority Selection 1" width="900">
 </p>
 
-The priority selection interface allows users to define what matters most for their journey, such as cost, speed, sustainability, accessibility, or reliability.
+Users can select criteria such as cost, speed, sustainability, accessibility, or reliability according to their requirements.
 
 <p align="center">
-  <img src="screenshots/priority-selection%202.png" alt="WAYFINDER Custom Priority Selection" width="900">
+<img src="./screenshots/priority-selection%202.png" alt="WAYFINDER Priority Selection 2" width="900">
 </p>
 
-The custom priority interface allows users to assign individual weights to different engineering criteria, making the decision model adaptable to different user requirements.
-
----
+The custom option allows users to assign their own weights to the different engineering criteria, making the optimization model adaptable to different user requirements.
 
 ## Optimization Methodology
 
@@ -140,59 +132,38 @@ Calculate Overall Score
 Rank Alternatives
         ↓
 Select Optimum Solution
-```
 
 Different criteria are normalized so that values such as cost, time, and estimated emissions can be compared using a common scoring model.
-
 The weighted criteria are then combined to calculate an overall score for each alternative.
-
 The highest-scoring feasible alternative is presented as the recommended solution.
-
----
-
-## Optimization Results
-
+Optimization Results
 The Results page presents the evaluated travel alternatives along with their scores, costs, journey details, and ranking.
-
 <p align="center">
-  <img src="screenshots/optimization-results%201.png" alt="WAYFINDER Optimization Results 1" width="900">
+<img src="./screenshots/optimization-results%201.png" alt="WAYFINDER Optimization Results 1" width="900">
 </p>
 
 The system compares multiple alternatives and identifies the option that best satisfies the selected priority.
-
 <p align="center">
-  <img src="screenshots/optimization-results%202.png" alt="WAYFINDER Optimization Results 2" width="900">
+<img src="./screenshots/optimization-results%202.png" alt="WAYFINDER Optimization Results 2" width="900">
 </p>
 
 Each alternative can be compared using measurable factors such as total cost, travel time, sustainability, comfort, reliability, and accessibility.
-
 <p align="center">
-  <img src="screenshots/optimization-results%203.png" alt="WAYFINDER Optimization Results 3" width="900">
+<img src="./screenshots/optimization-results%203.png" alt="WAYFINDER Optimization Results 3" width="900">
 </p>
 
 The results section makes the trade-offs between different travel alternatives visible instead of presenting only a single unexplained recommendation.
-
 <p align="center">
-  <img src="screenshots/optimization-results%204.png" alt="WAYFINDER Optimization Results 4" width="900">
+<img src="./screenshots/optimization-results%204.png" alt="WAYFINDER Optimization Results 4" width="900">
 </p>
 
 The final recommendation is generated from the weighted evaluation model and the constraints provided by the user.
-
----
-
-## Engineering Design Approach
-
+Engineering Design Approach
 WAYFINDER applies concepts from Engineering Design and Modelling.
-
-### Human-Centered Design
-
+Human-Centered Design
 The system begins by understanding the user's needs, preferences, and constraints.
-
-### Design Thinking
-
+Design Thinking
 The project follows a simplified Design Thinking approach:
-
-```text
 Empathize
    ↓
 Define
@@ -202,13 +173,9 @@ Ideate
 Prototype
    ↓
 Evaluate
-```
 
-### User Journey Mapping
-
+User Journey Mapping
 The user's interaction follows:
-
-```text
 Plan
  ↓
 Configure
@@ -220,29 +187,27 @@ Evaluate
 Decide
  ↓
 Review
-```
 
-### Design Constraints
-
+Design Constraints
 The optimization considers constraints such as:
-
 - Number of travelers
 - Trip type
 - Departure date
 - Return date
 - Stay duration
 - Stay budget
-
----
-
-## Design Inspector
-
-The **Design Inspector** is a key feature of WAYFINDER.
-
+Optimum Design
+The optimum journey is selected based on:
+User Requirement → Evaluation Criteria → Constraints → Alternative Scores → Weighted Overall Score → Ranking
+Sustainable Design
+Sustainability is included as one of the engineering evaluation criteria.
+WAYFINDER uses estimated environmental impact to compare alternatives.
+When the user selects Eco-friendly, sustainability becomes the primary design criterion.
+The system can therefore demonstrate how environmental impact can be incorporated into an engineering decision-making process.
+Design Inspector
+The Design Inspector is a key feature of WAYFINDER.
 Instead of showing only the final recommendation, it explains the reasoning behind the decision.
-
 It exposes:
-
 - User requirement
 - Selected priority
 - Evaluation criteria
@@ -252,24 +217,17 @@ It exposes:
 - Weighted evaluation
 - Final ranking
 - Optimum design
-
 <p align="center">
-  <img src="screenshots/design-inspect%201.png" alt="WAYFINDER Design Inspector 1" width="900">
+<img src="./screenshots/design-inspect%201.png" alt="WAYFINDER Design Inspector 1" width="900">
 </p>
 
 The Design Inspector provides a transparent view of the engineering decision process and shows how the selected requirements and criteria influence the recommendation.
-
 <p align="center">
-  <img src="screenshots/design-inspect%202.png" alt="WAYFINDER Design Inspector 2" width="900">
+<img src="./screenshots/design-inspect%202.png" alt="WAYFINDER Design Inspector 2" width="900">
 </p>
 
 This makes the optimization process more explainable by connecting the final recommendation to the underlying engineering criteria, constraints, and evaluation.
-
----
-
-## System Architecture
-
-```text
+System Architecture
 ┌─────────────────────────┐
 │       USER INPUT        │
 │ Route • Trip • Priority │
@@ -296,47 +254,31 @@ This makes the optimization process more explainable by connecting the final rec
 │   OPTIMIZED SOLUTION    │
 │ Recommendation + Reason │
 └─────────────────────────┘
-```
 
----
-
-## Technical Stack
-
-### Frontend
-
+Technical Stack
+Frontend
 - React.js
 - Vite
 - JavaScript
 - CSS
 - Lucide React
-
-### Backend
-
+Backend
 - Node.js
 - Express.js
 - REST API
 - CORS
-
-### Optimization
-
+Optimization
 - JavaScript-based optimization engine
 - Score normalization
 - Weighted decision model
 - Alternative ranking
 - Constraint-aware evaluation
-
-### Development Tools
-
+Development Tools
 - Visual Studio Code
 - Git
 - GitHub
 - npm
-
----
-
-## Project Structure
-
-```text
+Project Structure
 WAYFINDER/
 │
 ├── frontend/
@@ -377,14 +319,9 @@ WAYFINDER/
 │
 ├── .gitignore
 └── README.md
-```
 
----
-
-## Future Scope
-
+Future Scope
 WAYFINDER can be extended with:
-
 - Real-time transportation APIs
 - Hotel and accommodation APIs
 - Live traffic information
@@ -397,23 +334,12 @@ WAYFINDER can be extended with:
 - Machine-learning-based travel prediction
 - Mobile application
 - Dynamic optimization
-
-### Future Vision
-
-**Prototype Decision System → Real-Time Mobility Intelligence Platform**
-
----
-
-## Project Objective
-
+Future Vision
+Prototype Decision System → Real-Time Mobility Intelligence Platform
+Project Objective
 The objective of WAYFINDER is not to identify one universally "best" journey.
+It is to identify the journey that best satisfies the user's requirements, priorities, and constraints.
+"The best journey is the one that best fits YOU."
 
-It is to identify the journey that **best satisfies the user's requirements, priorities, and constraints**.
-
-> **"The best journey is the one that best fits YOU."**
-
----
-
-## Author
-
-**Kumar Saurav**
+Author
+Kumar Saurav
