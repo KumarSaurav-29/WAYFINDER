@@ -29,13 +29,10 @@ The main WAYFINDER interface provides a clean starting point for configuring a j
 <p align="center">
   <img src="./screenshots/wayfinder-home%201.png" alt="WAYFINDER Home Interface 1" width="900">
 </p>
-
-The interface keeps the planning process structured while presenting the core travel decision clearly to the user.
-
 <p align="center">
   <img src="./screenshots/wayfinder-home%202.png" alt="WAYFINDER Home Interface 2" width="900">
 </p>
-
+The interface keeps the planning process structured while presenting the core travel decision clearly to the user.
 The overall visual design focuses on clarity, hierarchy, and a simple user journey from planning to decision-making.
 
 ## Key Features
@@ -105,13 +102,11 @@ The priority selection stage allows the user to define what matters most for the
 <p align="center">
   <img src="./screenshots/priority-selection%201.png" alt="WAYFINDER Priority Selection 1" width="900">
 </p>
-
-Users can select criteria such as cost, speed, sustainability, accessibility, or reliability according to their requirements.
-
 <p align="center">
   <img src="./screenshots/priority-selection%202.png" alt="WAYFINDER Priority Selection 2" width="900">
 </p>
 
+Users can select criteria such as cost, speed, sustainability, accessibility, or reliability according to their requirements.
 The custom option allows users to assign their own weights to the different engineering criteria, making the optimization model adaptable to different user requirements.
 
 ## Optimization Methodology
@@ -147,25 +142,19 @@ The Results page presents the evaluated travel alternatives along with their sco
 <p align="center">
   <img src="./screenshots/optimization-results%201.png" alt="WAYFINDER Optimization Results 1" width="900">
 </p>
-
-The system compares multiple alternatives and identifies the option that best satisfies the selected priority.
-
 <p align="center">
   <img src="./screenshots/optimization-results%202.png" alt="WAYFINDER Optimization Results 2" width="900">
 </p>
-
-Each alternative can be compared using measurable factors such as total cost, travel time, sustainability, comfort, reliability, and accessibility.
-
 <p align="center">
   <img src="./screenshots/optimization-results%203.png" alt="WAYFINDER Optimization Results 3" width="900">
 </p>
-
-The results section makes the trade-offs between different travel alternatives visible instead of presenting only a single unexplained recommendation.
-
 <p align="center">
   <img src="./screenshots/optimization-results%204.png" alt="WAYFINDER Optimization Results 4" width="900">
 </p>
 
+The system compares multiple alternatives and identifies the option that best satisfies the selected priority.
+Each alternative can be compared using measurable factors such as total cost, travel time, sustainability, comfort, reliability, and accessibility.
+The results section makes the trade-offs between different travel alternatives visible instead of presenting only a single unexplained recommendation.
 The final recommendation is generated from the weighted evaluation model and the constraints provided by the user.
 
 ## Engineering Design Approach
@@ -258,13 +247,11 @@ It exposes:
 <p align="center">
   <img src="./screenshots/design-inspector%201.png" alt="WAYFINDER Design Inspector 1" width="900">
 </p>
-
-The Design Inspector provides a transparent view of the engineering decision process and shows how the selected requirements and criteria influence the recommendation.
-
 <p align="center">
   <img src="./screenshots/design-inspector%202.png" alt="WAYFINDER Design Inspector 2" width="900">
 </p>
 
+The Design Inspector provides a transparent view of the engineering decision process and shows how the selected requirements and criteria influence the recommendation.
 This makes the optimization process more explainable by connecting the final recommendation to the underlying engineering criteria, constraints, and evaluation.
 
 ## System Architecture
