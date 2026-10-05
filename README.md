@@ -256,13 +256,13 @@ It exposes:
 - Optimum design
 
 <p align="center">
-  <img src="./screenshots/design-inspect%201.png" alt="WAYFINDER Design Inspector 1" width="900">
+  <img src="./screenshots/design-inspector%201.png" alt="WAYFINDER Design Inspector 1" width="900">
 </p>
 
 The Design Inspector provides a transparent view of the engineering decision process and shows how the selected requirements and criteria influence the recommendation.
 
 <p align="center">
-  <img src="./screenshots/design-inspect%202.png" alt="WAYFINDER Design Inspector 2" width="900">
+  <img src="./screenshots/design-inspector%202.png" alt="WAYFINDER Design Inspector 2" width="900">
 </p>
 
 This makes the optimization process more explainable by connecting the final recommendation to the underlying engineering criteria, constraints, and evaluation.
